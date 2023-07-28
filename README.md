@@ -10,23 +10,23 @@
 
 Program structure
 
-1. class Deck
-   Build a deck
-   Deal two decks for each player
-   Compare card values (as a @classmethod)
+class Deck
+1. Build a deck
+2. Deal two decks for each player
+3. Compare card values (as a @classmethod)
 
-2. class Player
-   Store a deck that was passed as an argument
-   Store a bottom deck
-   Method to draw a card from the deck and print it
-   If main deck is empty then draw from bottom deck
-   Method to add an array of cards to bottom deck
+class Player
+1. Store a deck that was passed as an argument
+2. Store a bottom deck
+3. Method to draw a card from the deck and print it
+4. If main deck is empty then draw from bottom deck
+5. Method to add an array of cards to bottom deck
 
-3. main function
-   Construct Deck and 2 player objects
-   Each player object should take a dealt deck as an argument
-   Create a variable to track cards drawn in a round
-   Create a while loop for the game
+main function
+1. Construct Deck and 2 player objects
+2. Each player object should take a dealt deck as an argument
+3. Create a variable to track cards drawn in a round
+4. Create a while loop for the game
    - Computer draws a card
    - Program asks for user input ('d' for draw)
    - User draws a card
