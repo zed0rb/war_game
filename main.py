@@ -19,7 +19,7 @@ class Deck:
         "Ace",
     ]
 
-    def init(self):
+    def __init__(self):
         self.cards = []
         self.build_deck()
 
