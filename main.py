@@ -26,7 +26,14 @@ class Deck:
 
     @classmethod
     def compare(cls, card1, card2):
-        ...
+    c1 = card1.strip().split()[1]
+    c2 = card2.strip().split()[1]
+    if cls.values.index(c1) > cls.values.index(c2):
+        return "player1"
+    elif cls.values.index(c1) < cls.values.index(c2):
+        return "player2"
+    elif cls.values.index(c1) == cls.values.index(c2):
+        return "draw"
 
 
 class Player:
@@ -96,6 +103,10 @@ def main():
                 continue
             elif Deck.compare(player1_card, player2_card) == "draw":
                 print("WAR")
+                player1_card = player1.draw()
+                player2_card = player2.draw()
+                round_cards.append(player1_card)
+                round_cards.append(player2_card)
                 continue
 
         elif move == "q":
